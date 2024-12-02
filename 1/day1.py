@@ -1,5 +1,5 @@
 
-with open("input", "r") as file:
+with open("1/input", "r") as file:
     input = file.readlines()
 
 
