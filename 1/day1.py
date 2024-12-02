@@ -1,4 +1,4 @@
-
+#part1
 with open("1/input", "r") as file:
     input = file.readlines()
 
@@ -21,3 +21,14 @@ for i in range(0,len(input)):
 
 
 print(sum_of_distances)
+
+
+#part2 
+
+total_similarity_score = 0
+
+for id in list1:
+    similarity_score = id * list2.count(id)
+    total_similarity_score += similarity_score
+
+print(total_similarity_score)
