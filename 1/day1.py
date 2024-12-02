@@ -6,7 +6,7 @@ with open("1/input", "r") as file:
 list1 = []
 list2  = []
 
-for line in range(0,len(input)):
+for line in range(len(input)):
     entrees = input[line].split()
     list1.append(int(entrees[0]))
     list2.append(int(entrees[1]))
@@ -15,7 +15,7 @@ list1.sort()
 list2.sort()
 sum_of_distances = 0
 
-for i in range(0,len(input)):
+for i in range(len(input)):
     sum_of_distances += abs(list1[i]-list2[i])
 
 
